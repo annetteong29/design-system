@@ -53,8 +53,13 @@
         "react-dom": "^16.2.0"
     },
     "dependencies": {
+        "@material-ui/core": "^4.6.1",
+        "@material-ui/icons": "^4.5.1",
         "classnames": "^2.2.5",
-        "react-modal": "^3.1.7"
+        "material-ui": "^0.20.2",
+        "react-modal": "^3.1.7",
+        "react-router-dom": "^5.1.2",
+        "styled-components": "^3.4.10"
     },
     "devDependencies": {
         "@babel/cli": "^7.2.3",
