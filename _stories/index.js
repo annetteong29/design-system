@@ -4,3 +4,4 @@ import './layout/index.js';
 import './molecules/index.js';
 import './utilities/index.js';
 import './ActionWorkflow/index.js';
+import './ActionTasks/index.js';

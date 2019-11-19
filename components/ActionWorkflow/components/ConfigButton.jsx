@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import Button from '@material-ui/core/Button';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import EditIcon from '@material-ui/icons/Edit';
 import AccountTreeOutlinedIcon from '@material-ui/icons/AccountTreeOutlined';
 import IconButton from '@material-ui/core/IconButton';
@@ -157,20 +157,6 @@ class ConfigButton extends React.Component {
             {buttonName}
           </Button>
         )
-      case BUTTON_TYPES.VIEW:
-        return (
-          <ToolTip title={toolTipText}>
-            <IconButton
-              data-testid="view"
-              className={classes.iconView}
-              onClick={onClick}
-              component={RouterLink}
-              to={to}
-            >
-              <SubdirectoryArrowRightIcon/>
-            </IconButton>
-          </ToolTip>
-        )
       case BUTTON_TYPES.EDIT:
         return (
           <Button
@@ -197,6 +183,20 @@ class ConfigButton extends React.Component {
               <HighlightOffIcon
                 className={classes.iconSmall}
               />
+            </IconButton>
+          </ToolTip>
+        )
+      case BUTTON_TYPES.VIEW:
+        return (
+          <ToolTip title={toolTipText}>
+            <IconButton
+              data-testid="view"
+              className={classes.iconView}
+              onClick={onClick}
+              // component={RouterLink}
+              // to={to}
+            >
+              <SubdirectoryArrowRightIcon/>
             </IconButton>
           </ToolTip>
         )
@@ -257,13 +257,31 @@ class ConfigButton extends React.Component {
 
   render() {
     const button = this.iconLabelButtons()
-
     return button
   }
 }
 
+ConfigButton.displayName = 'ConfigButton';
+
 ConfigButton.propTypes = {
   classes: PropTypes.object.isRequired,
+  // to
+  onClick: PropTypes.func.isRequired,
+  /** SAVE, EDIT, CLEAR
+   * CLEAR_SELECTED, CLOSE, INFO
+   * VIEW, STOP_WORKFLOW, DIAGRAM */
+  buttonType: PropTypes.string.isRequired,
+  /** [buttonType = EDIT] Edit */
+  // buttonName: PropTypes.oneOf(['Edit']),
+  buttonName: PropTypes.string,
+  /** [buttonType = CLEAR_SELECTED] Clear selected
+   * [buttonType = VIEW] View tasks / View workflows
+   * [buttonType = CLOSE] Close
+   * [buttonType = STOP_WORKFLOW] Stop Workflow
+   * [buttonType = DIAGRAM] View progress
+   * [buttonType = INFO] View Diagram
+   */
+  toolTipText: PropTypes.string
 };
 
 export default withStyles(styles)(ConfigButton);

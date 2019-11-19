@@ -1,0 +1,14 @@
+.mui-pagination button:disabled {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.26);
+  }
+  
+  .mui-pagination button:focus {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.54);
+  }
+  
+  .mui-pagination button:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+    color: inherit;
+  }

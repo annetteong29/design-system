@@ -4,7 +4,9 @@ import { withKnobs } from '@storybook/addon-knobs';
 
 import ConfigButton from './components/ConfigButton/';
 
-const stories = storiesOf('AlexWorkflow', module);
+const stories = storiesOf('ActionWorkflow', module);
+
+console.log(...ConfigButton);
 
 stories
     .addDecorator(withKnobs)
