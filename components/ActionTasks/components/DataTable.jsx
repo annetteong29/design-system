@@ -165,12 +165,12 @@ DataTable.displayName = 'DataTable';
 
 DataTable.propTypes = {
     classes: PropTypes.object,
-    // data
-    // headers
+    data: PropTypes.object,
+    headers: PropTypes.array,
     handleClick: PropTypes.func,
     noDataMessage: PropTypes.string.isRequired,
     error: PropTypes.bool.isRequired,
     refresh: PropTypes.func.isRequired
 }
 
-export default withStyles(styles)(DataTable)
+export default withStyles(styles)(DataTable);

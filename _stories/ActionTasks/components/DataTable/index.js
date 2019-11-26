@@ -72,14 +72,6 @@ const dataTrue = {
             assetType: "Stored Procedure Sub Process",
             // assetIcon
             workflowInstanceId: "08" },
-        { id: "8",
-            name: "Approval",
-            workflowDefinitionName: "Multi-Level Approval",
-            workflowDefinitionCategory: "ASSET",
-            assetName: "DataSourceKey",
-            assetType: "Stored Procedure Sub Process",
-            // assetIcon
-            workflowInstanceId: "08" },
         { id: "9",
             name: "HC",
             workflowDefinitionName: "Health Check",
@@ -112,6 +104,14 @@ const dataTrue = {
             assetType: "Stored Procedure Sub Process",
             // assetIcon
             workflowInstanceId: "12" },
+        { id: "13",
+            name: "Approval",
+            workflowDefinitionName: "Multi-Level Approval",
+            workflowDefinitionCategory: "ASSET",
+            assetName: "DataSourceKey",
+            assetType: "Stored Procedure Sub Process",
+            // assetIcon
+            workflowInstanceId: "13" },
     ]
 }
 
@@ -142,7 +142,7 @@ const component = () => (
             data={boolean('data', true) ? dataTrue : noData} // {text('data', data)}
             headers={headers}
             handleClick={boolean('handleClick', false) ? action('row_clicked') : undefined}
-            noDataMessage={text('noDataMessage', '')}
+            noDataMessage={text('noDataMessage', 'No data available.')}
             // classes={classes}
             refresh={action('refresh_clicked')}
         />

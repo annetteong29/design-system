@@ -2,10 +2,10 @@ import { storiesOf } from '@storybook/react';
 import { withReadme } from 'storybook-readme';
 import { withKnobs } from '@storybook/addon-knobs';
 
-import DataTable from './components/DataTable/';
+import TabParent from './components/TabParent/';
 
-const stories = storiesOf('ActionTasks', module);
+const stories = storiesOf('Tabs', module);
 
 stories
     .addDecorator(withKnobs)
-    .add('DataTable', withReadme(...DataTable));
+    .add('TabParent', withReadme(...TabParent));

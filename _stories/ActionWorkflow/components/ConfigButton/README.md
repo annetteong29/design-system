@@ -1,16 +1,32 @@
 
 
-```ConfigButton``` [does what]. It is used for [some stuff].
+`<ConfigButton>` [does what]. It is used for [some stuff].
 
-### Props
+## Basic Usage
 
-* **buttonTypes** ```String``` <br/>Defines context of button.
+```javascript
+// icons
+<ConfigButton
+    buttonType="CLOSE"
+    toolTipText="Close"
+    onClick={close} />
 
-* **buttonName** (opt) ```String``` <br/>Defines text of button.
+// with label
+<ConfigButton
+    buttonType='EDIT'
+    buttonName='Edit'
+    onClick={this.handleOpenConfig(row)} />
+```
 
-* **toolTipText** (opt) ```String``` <br/>Hint text when cursor is over button.
+## Props
 
-### Usage
+* **buttonTypes** `String` <br/>Defines context of button.
+
+* **buttonName** (opt) `String` <br/>Defines text of button.
+
+* **toolTipText** (opt) `String` <br/>Hint text when cursor is over button.
+
+### Usage of Props
 
 ##### Workflow under Action tab
 
