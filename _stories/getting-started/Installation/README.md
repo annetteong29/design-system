@@ -2,6 +2,30 @@
 
 ---
 
+Steps to install and run codebase:
+
+1. Clone from gumdrops (gumgum design system https://github.com/gumgum/gumdrops).
+```
+npm add gumdrops@1.10.0
+npm add gg-design-system node-sass
+npm install acorn (resolve dependency issue)
+```
+
+2. Add a 'host' param to make Storybook open to public IP addresses (AWS instance).
+```
+~ in package.json ~
+scripts: {
+    storybook: "start-storybook -p 6006 -h 0.0.0.0"
+}
+```
+
+3. Run Storybook.
+```
+yarn run storybook
+```
+
+---
+
 To add a specific version, you can use `yarn add gumdrops@1.0.0` (replace 1.0.0 with whatever version you want, or omit it to get the latest version)
 
 The current and previous versions can be found in [CHANGELOG.md](https://github.com/gumgum/gumdrops/blob/master/CHANGELOG.md)

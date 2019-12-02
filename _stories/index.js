@@ -1,5 +1,5 @@
 import './getting-started/index.js';
-import './Foundation/index.js';
+import './foundation/index.js';
 import './atoms/index.js';
 import './layout/index.js';
 import './molecules/index.js';

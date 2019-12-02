@@ -1,30 +1,30 @@
 
 
-# Typography
+## Typography
 
-<br/>
+---
 
-#### Description
+(description)
 
-#### Included Components
+https://www.carbondesignsystem.com/guidelines/typography/overview
 
-#### Import
+##### Typeface
+Font stack?
 
-<br/>
+##### Sizes/scale
+(some screenshot and text)
 
-```
-code example
-```
+##### Weight
+(some screenshot and text)
 
-<br/>
+##### Color of text
+(some screenshot and text)
 
-## Examples
+---
 
-<br/>
+#### Examples
 
-#### Basic Usage
+(some examples)
 
-#### Heading examples
-
-#### Text examples
+###### Basic Usage
 
