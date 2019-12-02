@@ -1,5 +1,5 @@
-@import '~gg-design-system/scss/themes/theme-blue';
-@import '~gg-design-system/scss/main';
+// @import '~gg-design-system/scss/themes/theme-blue';
+// @import '~gg-design-system/scss/main';
 
 body {
     background-color: #fff;
@@ -10,6 +10,10 @@ table {
     border-spacing: 0 !important;
     padding: 2rem 0;
     font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 thead {

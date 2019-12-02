@@ -19,8 +19,19 @@ addParameters({
         isToolshown: true,
         theme: create({
             base: 'light',
-            brandTitle: 'Gumdrops',
-            brandUrl: 'https://storybook.gumgum.com'
+            // colorPrimary: 'red',
+            colorSecondary: '#FF6D00',
+
+            // UI
+            // appBg: 'red', // whole background apart from main contents (including sidebar)
+            // appContentBg: 'purple', // addons section
+            // appBorderColor: 'grey',
+            appBorderRadius: 4,
+
+            // brand
+            brandTitle: 'ALEX',
+            brandImage: 'https://alexsolutions.atlassian.net/wiki/download/thumbnails/165216970/alex1.png?version=1&modificationDate=1512365721306&cacheVersion=1&api=v2&width=800&height=304'
+            // brandUrl: 'https://storybook.gumgum.com'
         })
     }
 });
