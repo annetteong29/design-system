@@ -3,7 +3,8 @@ import { storiesOf } from '@storybook/react';
 import typography from './Typography/README.md';
 import colors from './Colors/README.md';
 import icons from './Icons/README.md';
-import gridspacing from './GridSpacing/README.md'
+import gridspacing from './GridSpacing/README.md';
+import designprinciples from './DesignPrinciples/README.md';
 
 const stories = storiesOf('Foundation', module);
 
@@ -20,4 +21,5 @@ stories
   .add('Typography', () => {}, { info: { text: typography } })
   .add('Colors', () => {}, { info: { text: colors } })
   .add('Icons', () => {}, { info: { text: icons } })
-  .add('Grid/Spacing', () => {}, { info: { text: gridspacing } });
+  .add('Grid/Spacing', () => {}, { info: { text: gridspacing } })
+  .add('Design Principles', () => {}, { info: { text: designprinciples }});
